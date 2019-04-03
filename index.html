@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Ejercicio de fracciones | Pintar fracciones directamente</h1>
+    </header>
+
+    <main>
+
+        <div class="modal">
+                <div class="errores">
+                        <p class="msgError"></p>
+                        <button id="cerrarPopUp" class="btnsParteDos" onclick="cerrarPopUp()">Cerrar</button>
+                </div>
+        </div>
+
+        
+
+        <div id="fraccionesYresultado">
+            <div id="rectanguloFracciones">
+                    
+            </div>
+
+            <div id="resultado">
+                
+            </div>
+        </div>
+
+        <div id="contenidoBotones">
+            <div id="btnCalcular">
+                <button id="calcular" class="btnsParteDos" onclick="calculoFraccion(10,2)">Fracción</button>
+            </div>
+
+            <!-- TODO: poner (this.id) para refactorizar el código y utilizarlo en las funciones -->
+
+            <div id="rectanguloBotones">
+                <button id="anadirDenominador" class="btnsParteDos" onclick="cambiarDenominador(this.id)">+ Denominador</button>
+                <button id="quitarDenominador" class="btnsParteDos" onclick="cambiarDenominador(this.id)">- Denominador</button>
+                <button id="aumentaNumerador" class="btnsParteDos" onclick="cambiarNumerador(this.id)">+ Numerador</button>
+                <button id="quitaNumerador" class="btnsParteDos" onclick="cambiarNumerador(this.id)">- Numerador</button> 
+            </div>
+        </div>
+
+            
+
+            <!-- PARTE 2 -->
+            
+        <div id="contenedorBotonConfirmacion">
+                <button id="confirmarFraccionInicial" class="btnsParteDos" onclick="confirmarFraccionInicial()">Comprobación</button>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
