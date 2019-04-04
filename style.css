@@ -81,7 +81,7 @@ div#rectanguloFracciones{
 }
 
 .btnsParteDos{
-    width:24%;
+    width:24.3%;
     height: 70px;
     background:rgb(146, 198, 216);
     border:1px solid black;
@@ -107,6 +107,10 @@ div#rectanguloFracciones{
     border-bottom: 4px solid blue;
     transform: scale(1.01);
     background: blue;
+}
+
+.btnsParteDos:last-child{
+    margin-right: 0%;
 }
 
 .rectFraccAnimateSuccess{
